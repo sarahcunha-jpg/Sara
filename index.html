@@ -1,20 +1,203 @@
-<!Doctype html>
-HTML lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name=" viewport" content="width=device-width,initial-scale=1.0">
-  <title>Sara Hellen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLove Care | Cuidando com Amor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4cdbd7e6e8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <header>
-    <h1>Sara Hellen</h1>
+
+<header>
+
+<div class="logo">
+🐾 PetLove Care
+</div>
 
 <nav>
-  <ul>
-    <il>Sobre mim</il>
-    <il>Projetos</il>
-    <il>Contatos</il>
-  </ul>
+<a href="#inicio">Início</a>
+<a href="#sobre">Sobre</a>
+<a href="#servicos">Serviços</a>
+<a href="#contato">Contato</a>
 </nav>
-  </header>
+
+</header>
+
+<section class="hero" id="inicio">
+
+<div class="hero-text">
+
+<h1>Seu melhor amigo merece o melhor cuidado.</h1>
+
+<p>
+Banho, tosa, consultas veterinárias e muito carinho para deixar seu pet feliz e saudável.
+</p>
+
+<a href="#contato" class="btn">
+Agendar Atendimento
+</a>
+
+</div>
+
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=600" alt="Cachorro">
+</div>
+
+</section>
+
+<section class="sobre" id="sobre">
+
+<h2>Sobre Nós</h2>
+
+<div class="sobre-container">
+
+<div>
+
+<p>
+
+A PetLove Care nasceu com o objetivo de oferecer um atendimento humanizado para cães e gatos.
+
+Nossa equipe é formada por profissionais apaixonados por animais e preparados para cuidar da saúde, higiene e bem-estar do seu pet.
+
+</p>
+
+</div>
+
+<div class="numeros">
+
+<div>
+
+<h3>+5000</h3>
+
+<p>Pets atendidos</p>
+
+</div>
+
+<div>
+
+<h3>10</h3>
+
+<p>Anos de experiência</p>
+
+</div>
+
+<div>
+
+<h3>98%</h3>
+
+<p>Clientes satisfeitos</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="servicos" id="servicos">
+
+<h2>Nossos Serviços</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-bath"></i>
+
+<h3>Banho e Tosa</h3>
+
+<p>Higiene completa para deixar seu pet cheiroso e feliz.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-stethoscope"></i>
+
+<h3>Consultas</h3>
+
+<p>Atendimento veterinário especializado.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-bone"></i>
+
+<h3>Pet Shop</h3>
+
+<p>Rações, brinquedos e acessórios das melhores marcas.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-syringe"></i>
+
+<h3>Vacinação</h3>
+
+<p>Proteção e prevenção para todas as fases da vida.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contato" id="contato">
+
+<h2>Entre em Contato</h2>
+
+<form id="formContato">
+
+<input
+type="text"
+id="nome"
+placeholder="Nome"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="E-mail"
+required>
+
+<textarea
+id="mensagem"
+placeholder="Mensagem"
+required></textarea>
+
+<button type="submit">
+Enviar Mensagem
+</button>
+
+</form>
+
+<p id="mensagemSucesso"></p>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 PetLove Care - Todos os direitos reservados.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
+</html>
