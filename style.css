@@ -1,0 +1,305 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fafc;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#ff7b00;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:25px;
+    color:#333;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff7b00;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:130px 8% 80px;
+    gap:40px;
+    background:linear-gradient(135deg,#fff7ef,#ffe7cf);
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:#222;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:35px;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff7b00;
+    color:#fff;
+    padding:16px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff5e00;
+    transform:translateY(-4px);
+}
+
+.hero-img{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-img img{
+    width:100%;
+    max-width:480px;
+    border-radius:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+/* SOBRE */
+
+.sobre{
+    padding:90px 8%;
+    background:#fff;
+}
+
+.sobre h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.sobre-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.sobre p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+.numeros{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.numeros div{
+    background:#ff7b00;
+    color:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.numeros h3{
+    font-size:35px;
+}
+
+.numeros p{
+    color:white;
+}
+
+/* SERVIÇOS */
+
+.servicos{
+    background:#f5f5f5;
+    padding:90px 8%;
+}
+
+.servicos h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    transition:.3s;
+    aspect-ratio:1/1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:55px;
+    color:#ff7b00;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+/* CONTATO */
+
+.contato{
+    padding:90px 8%;
+}
+
+.contato h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    padding:18px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    font-size:16px;
+}
+
+textarea{
+    height:180px;
+    resize:none;
+}
+
+button{
+    background:#ff7b00;
+    color:white;
+    border:none;
+    padding:18px;
+    font-size:18px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#ff5e00;
+}
+
+#mensagemSucesso{
+    text-align:center;
+    margin-top:20px;
+    color:green;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.sobre-container{
+    grid-template-columns:1fr;
+}
+
+.numeros{
+    grid-template-columns:1fr;
+}
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    margin:8px;
+}
+
+}
